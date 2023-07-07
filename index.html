@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    /* Basic CSS styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+
+    .header-title {
+      margin: 0;
+      font-size: 20px;
+      font-family: "Arial", sans-serif;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 2s steps(40, end);
+    }
+
+    .slogan {
+      margin: 0;
+      font-size: 14px;
+      font-family: Consolas, monospace;
+      overflow: hidden;
+      white-space: nowrap;
+      animation: typing 2s steps(60, end) 2s; /* Delay before starting the slogan typing effect */
+    }
+
+    @keyframes typing {
+      from {
+        width: 0;
+      }
+      to {
+        width: 100%;
+      }
+    }
+
+    .header-content {
+      display: flex;
+      align-items: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Responsive CSS styles */
+    @media screen and (max-width: 600px) {
+      .container {
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="Code.png" alt="Website Logo" class="logo">
+      <div>
+        <h1 class="header-title" id="companyName"></h1>
+        <p class="slogan" id="slogan"></p>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div>
+      <div class="header-content">
+        <img src="Code.png" alt="Website Logo" class="logo">
+          <h2 >YouTube Channel.</h2>
+      </div>
+      
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2023 My Website. All rights reserved.
+  </footer>
+
+  <script>
+    // Script to simulate typing effect for the slogan and company name
+    const sloganElement = document.getElementById('slogan');
+    const companyNameElement = document.getElementById('companyName');
+    const sloganText = "Harnessing the potential of AI to transform industries.";
+    const companyNameText = "Roshan's Empire";
+    let sloganIndex = 0;
+    let companyNameIndex = 0;
+
+    function typeSlogan() {
+      sloganElement.textContent = sloganText.slice(0, sloganIndex++);
+      if (sloganIndex <= sloganText.length) {
+        setTimeout(typeSlogan, 50); // Adjust the speed here (lower value = faster)
+      }
+    }
+
+    function typeCompanyName() {
+      companyNameElement.textContent = companyNameText.slice(0, companyNameIndex++);
+      if (companyNameIndex <= companyNameText.length) {
+        setTimeout(typeCompanyName, 20); // Adjust the speed here (lower value = faster)
+      } else {
+        sloganIndex = 0;
+        setTimeout(typeSlogan, 1000); // Delay before starting the slogan typing effect
+      }
+    }
+
+    typeCompanyName();
+  </script>
+</body>
+</html>
