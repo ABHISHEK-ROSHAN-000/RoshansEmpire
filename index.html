@@ -1,201 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <link rel="apple-touch-icon" sizes="180x180" href="icon_/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="icon_/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="icon_/favicon-16x16.png">
-  <link rel="manifest" href="icon_/site.webmanifest">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <style>
-    /* Basic CSS styles */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh; /* Set minimum height to fill the viewport */
-    }
-
-    header {
-      background-color: #070029;
-      color: #fff;
-      padding: 5px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
-    .logo {
-      width: 80px;
-      height: 80px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-right: 10px;
-    }
-
-    .header-title {
-      margin: 0;
-      font-size: 20px;
-      font-family: "Arial", sans-serif;
-      overflow: hidden;
-      white-space: nowrap;
-      animation: typing 2s steps(40, end);
-    }
-
-    .slogan {
-      margin: 0;
-      font-size: 14px;
-      font-family: Consolas, monospace;
-      overflow: hidden;
-      white-space: nowrap;
-      animation: typing 2s steps(60, end) 2s;
-    }
-
-    .links {
-      margin: 0;
-      font-size: 15px;
-      font-family: Consolas, monospace;
-      overflow: hidden;
-      white-space: nowrap;
-    }
-
-    @keyframes typing {
-      from {
-        width: 0;
-      }
-      to {
-        width: 100%;
-      }
-    }
-
-    .header-content {
-      display: flex;
-      align-items: center;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      flex: 1; /* Allow container to grow and fill remaining vertical space */
-    }
-
-    footer {
-      background-color: #070029;
-      color: #fff;
-      padding: 10px;
-      text-align: center;
-      margin-top: auto; /* Push the footer to the bottom */
-    }
-  </style>
+    <video autoplay muted loop
+        style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -1;">
+        <source src="Img_vid/s2.mp4" type="video/mp4">
+    </video>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Roshan's Empire</title>
 </head>
+
 <body>
-  <header>
-    <div class="header-content">
-      <img src="Code.png" alt="Website Logo" class="logo">
-      <div>
-        <h1 class="header-title" id="companyName"></h1>
-        <p class="slogan" id="slogan"></p>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="text-gray-400 bg-gray-900 body-font">
-      <div class="container px-5 py-24 mx-auto flex flex-wrap">
-        <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-          <img alt="feature" class="object-cover object-center h-full w-full" src="abhi.jpg">
+    <header>
+        <div class="nav_bar">
+            <div class="logo">
+                <a href="index.html">
+                    <h1>Roshan's Empire</h1>
+                </a>
+            </div>
         </div>
-        <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
-          <div class="flex flex-col mb-10 lg:items-start items-center">
-            <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-5">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-              </svg>
-            </div>
-            <div class="flex-grow">
-              <a href="About.html"><h2 class="text-white text-lg title-font font-medium mb-3">About Us.</h2></a>
-              <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
-              <a href="About.html" class="mt-3 text-indigo-400 inline-flex items-center">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="flex flex-col mb-10 lg:items-start items-center">
-            <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-5">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                <circle cx="6" cy="6" r="3"></circle>
-                <circle cx="6" cy="18" r="3"></circle>
-                <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-              </svg>
-            </div>
-            <div class="flex-grow">
-              <a href="https://youtube.com/@PythonByAbhi?sub_confirmation=1" target="_blank"><h2 class="text-white text-lg title-font font-medium mb-3">YouTube.</h2></a>
-              <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
-              <a href="https://youtube.com/@PythonByAbhi?sub_confirmation=1" target="_blank" class="mt-3 text-indigo-400 inline-flex items-center">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="flex flex-col mb-10 lg:items-start items-center">
-            <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-5">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
-                <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                <circle cx="12" cy="7" r="4"></circle>
-              </svg>
-            </div>
-            <div class="flex-grow">
-              <a href="Contact.html"><h2 class="text-white text-lg title-font font-medium mb-3">Contact Me</h2></a>
-              <p class="leading-relaxed text-base">Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine.</p>
-              <a href="Contact.html" class="mt-3 text-indigo-400 inline-flex items-center">Learn More
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                  <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-              </a>
-            </div>
-          </div>
+    </header>
+    <main>
+        <div class="main_">
+            <!-- <img src="Img_vid/20210525014153__MG_8510.jpg" alt="Error"> -->
+            <a href="Projects.html">
+                <h2>Projects.</h2>
+            </a>
+            <a href="Projects.html"><p>Projects made by Abhishek Roshan</p></a>
         </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    &copy; 2023 My Website. All rights reserved.
-  </footer>
-
-  <script>
-    // Script to simulate typing effect for the slogan and company name
-    const sloganElement = document.getElementById('slogan');
-    const companyNameElement = document.getElementById('companyName');
-    const sloganText = "Harnessing the potential of AI to transform industries.";
-    const companyNameText = "Roshan's Empire";
-    let sloganIndex = 0;
-    let companyNameIndex = 0;
-
-    function typeSlogan() {
-      sloganElement.textContent = sloganText.slice(0, sloganIndex++);
-      if (sloganIndex <= sloganText.length) {
-        setTimeout(typeSlogan, 20); // Adjust the speed here (lower value = faster)
-      }
-    }
-
-    function typeCompanyName() {
-      companyNameElement.textContent = companyNameText.slice(0, companyNameIndex++);
-      if (companyNameIndex <= companyNameText.length) {
-        setTimeout(typeCompanyName, 20); // Adjust the speed here (lower value = faster)
-      } else {
-        sloganIndex = 0;
-        setTimeout(typeSlogan, 1700); // Delay before starting the slogan typing effect
-      }
-    }
-
-    typeCompanyName();
-  </script>
+    </main>
 </body>
+
 </html>

@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+.nav_bar {
+    background-color: #070029;
+    height: 55px;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    height: 50px;
+    /* color: #2c0bce; */
+    color: #7932bb;
+    font-family: 'Mistral';
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo a {
+    font-size: 1.1rem;
+    color: #7932bb;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color: #9957d6;
+}
+
+.main_ {
+    background-color: #070029;
+    color: white;
+    margin: 25px auto;
+    width: 85%;
+    border-radius: 18px;
+    padding: 2.5%;
+}
+
+.main_ h2 {
+    color: #7932bb;
+    /* font-family: 'Courier New', Courier, monospace; use this in projects font*/
+    font-family: 'Segoe Script';
+    font-size: 1.5rem;
+}
+
+.main_ h2:hover {
+    color: #9957d6;
+}
+
+.main_ img {
+    height: 25rem;
+    border-radius: 18px;
+}
+
+.main_ a {
+    text-decoration: none;
+    color: #7932bb;
+}
+
+.main_ p {
+    font-family: 'Segoe Script';
+    font-size: 1.1rem;
+    color: #c4abdb;
+    padding-top: 1rem;
+    /* padding-left: 1.5rem; */
+}
+.main_ p:hover {
+    color: #d6cbe0;
+}
