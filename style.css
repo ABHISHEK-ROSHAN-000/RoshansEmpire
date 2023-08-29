@@ -34,7 +34,7 @@ body {
 .logo {
     display: flex;
     height: 50px;
-    color: #8651B7;
+    color: #7932bb;
     font-family: 'Caveat', cursive;
     align-items: center;
     justify-content: space-around;
@@ -87,6 +87,18 @@ body {
 }
 .main_ p:hover {
     color: #d6cbe0;
+}
+
+.main_ i:hover {
+    color: #9957d6;
+}
+
+.icons_ {
+    color: #7932bb;
+}
+
+.icons_:hover {
+    color: #9957d6;
 }
 
 /* FOTTER__CONTENT */
